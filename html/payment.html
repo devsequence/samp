@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+	@@include('./includes/_head.html')
+</head>
+<body>
+<!--page-wrapper-->
+<div class="page-wrapper">
+	@@include('./includes/_header.html')
+	<!--page-content-->
+	<div class="page-content">
+		<section class="payment">
+			<div class="container">
+				<div class="title-block">
+					<div class="subtitle-section">Донат</div>
+					<div class="title-section">
+						Поповнення
+						<span>рахунку</span>
+					</div>
+				</div>
+				<div class="payment-wrap">
+					<div class="payment-form">
+						<form>
+							<label>
+								<span>Введіть E-mail адресу</span>
+								<input type="email" name="email" placeholder="Ваш E-mail">
+							</label>
+							<label>
+								<span>Введіть свій нікнейм</span>
+								<input type="text" name="name" placeholder="Ваш нік">
+							</label>
+							<label>
+								<span>Оберіть сервер</span>
+								<select name="server">
+									<option value="Kyiv">Kyiv</option>
+									<option value="Kharkiv">Kharkiv</option>
+								</select>
+							</label>
+							<label>
+								<span>Введість суму поповнення</span>
+								<input type="number" name="sum" placeholder="Сума">
+							</label>
+							<button type="submit" class="btn-secondary">Поповнити рахунок</button>
+						</form>
+					</div>
+					<div class="payment-media">
+						<img src="../static/images/general/money.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="payment-bg">
+				<span class="payment-left"><img src="../static/images/general/flag-left-4.png" alt="flag"></span>
+				<span class="payment-right"><img src="../static/images/general/right-pay.png" alt="right"></span>
+			</div>
+			<div class="clouds-block">
+				<span style="background-image: url('../static/images/general/cloud.png')"></span>
+				<span style="background-image: url('../static/images/general/cloud.png')"></span>
+				<span style="background-image: url('../static/images/general/cloud.png')"></span>
+				<span style="background-image: url('../static/images/general/cloud.png')"></span>
+				<span style="background-image: url('../static/images/general/cloud.png')"></span>
+				<span style="background-image: url('../static/images/general/cloud.png')"></span>
+				<span style="background-image: url('../static/images/general/cloud.png')"></span>
+				<span style="background-image: url('../static/images/general/cloud.png')"></span>
+				<span style="background-image: url('../static/images/general/cloud.png')"></span>
+			</div>
+		</section>
+	</div>
+	<!--page-content-->
+	@@include('./includes/_footer.html')
+</div>
+<!--end-page-wrapper-->
+<div class="hidden">
+    @@include('./includes/symbol/icons.html')
+</div>
+@@include('./includes/_scripts.html')
+</body>
+</html>
